@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap">
+    <style>
+        /* Estilos globais */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #b37b56d7;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            border: 2px solid #ffffff; /* Adicione as bordas */
+            padding: 10px; /* Adicione algum espaço interno */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Estilos das seções */
+        section {
+            padding: 40px;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #b37b56d7;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Estilos da seção de produtos */
+        .produtos {
+            text-align: center;
+            background-color: #aba092;
+            padding: 40px 0;
+        }
+
+        .produto {
+            display: inline-block;
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #6b5648;
+            text-align: center;
+            animation: pulse 2s infinite; /* Adicionando a animação */
+        }
+
+        .produto img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .preco {
+            font-weight: bold;
+            color: #fff; /* Alterando a cor do preço para branca */
+            margin-top: 10px;
+        }
+
+        /* Estilos das caixas de destaques, sobre nós e contato */
+        .caixa {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .caixa h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+        }
+
+        .caixa p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /* Definindo a animação "pulse" */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <title>Seu Site de Moda</title>
+</head>
+<body>
+    <header>
+        <h1>MALUBORIE</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="destaques caixa">
+        <h2>Destaques</h2>
+        <p>Nova marca internacional de roupas</p>
+    </section>
+
+    <section class="sobre caixa">
+        <h2>Sobre Nós</h2>
+        <p>A marca propoem qualidade, conforto e qualidade de vida.</p>
+    </section>
+
+    <section class="contato caixa">
+        <h2>Contato</h2>
+        <p>@m.heloisasch</p>
+    </section>
+
+    <section class="produtos">
+        <h2>Nossos Produtos</h2>
+        
+        <div class="produto">
+            <img src="https://img.ltwebstatic.com/images3_pi/2020/06/06/15914382239cb38713a504f212693b40b7f994af3e_thumbnail_600x.webp" alt="Roupa 1">
+            <p class="preco">R$ 99,99</p>
+        </div>
+        
+        <div class="produto">
+            <img src="https://img.ltwebstatic.com/images3_pi/2020/11/26/1606357372c9880db45d702e3743d062baf1ad6c94_thumbnail_600x.webp" alt="Roupa 2">
+            <p class="preco">R$ 79,99</p>
+        </div>
+        
+        <!-- Adicione mais produtos da mesma forma -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Seu Site de Moda</p>
+    </footer>
+</body>
+</html>
